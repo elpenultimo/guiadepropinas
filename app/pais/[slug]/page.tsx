@@ -2,6 +2,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { findPaisBySlug, paises } from "@/data/paises";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export const dynamicParams = false;
@@ -48,12 +49,76 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
     })),
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Inicio",
+        item: "https://guiadepropinas.vercel.app/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Países",
+        item: "https://guiadepropinas.vercel.app/paises",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: pais.name,
+        item: `https://guiadepropinas.vercel.app/pais/${pais.slug}`,
+      },
+    ],
+  };
+
+  const extra = pais.extra ?? {};
+  const errores = extra.erroresComunes?.length
+    ? extra.erroresComunes
+    : [
+        "No asumir que la propina es obligatoria en todos los servicios.",
+        "Llevar siempre efectivo pequeño por si el POS no acepta montos extra.",
+        "Preguntar antes de añadir propina en apps para evitar duplicar cargos.",
+        "Confirmar si ya hay cargo de servicio en la cuenta.",
+      ];
+
+  const relacionadosBase = pais.continente
+    ? paises.filter((p) => p.continente === pais.continente && p.slug !== pais.slug)
+    : [];
+  const relacionadosFallback = paises.filter(
+    (p) => p.slug !== pais.slug && !relacionadosBase.some((base) => base.slug === p.slug)
+  );
+  const relacionados = [...relacionadosBase, ...relacionadosFallback].slice(0, 6);
+
   return (
     <div className="space-y-6">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <nav aria-label="Breadcrumb" className="text-sm text-white/70">
+        <ol className="flex flex-wrap items-center gap-2">
+          <li>
+            <Link href="/" className="hover:text-white">
+              Inicio
+            </Link>
+          </li>
+          <li className="text-white/50">/</li>
+          <li>
+            <Link href="/paises" className="hover:text-white">
+              Países
+            </Link>
+          </li>
+          <li className="text-white/50">/</li>
+          <li className="font-semibold text-white">{pais.name}</li>
+        </ol>
+      </nav>
       <header className="space-y-1">
         <p className="badge">Guía rápida</p>
         <h1 className="text-3xl font-bold">Propinas en {pais.name}</h1>
@@ -87,9 +152,68 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
         <AdSlot />
       </div>
 
+      <section className="grid gap-4 md:grid-cols-2">
+        <div className="card">
+          <h2 className="section-title">Bares y cafés</h2>
+          <p className="leading-relaxed text-white/90">
+            {extra.baresCafes ?? "Busca dejar monedas o un pequeño porcentaje si hubo buena atención."}
+          </p>
+        </div>
+        <div className="card">
+          <h2 className="section-title">Tours y guías</h2>
+          <p className="leading-relaxed text-white/90">
+            {extra.tours ?? "En tours guiados se agradece una propina acorde a la duración y el tamaño del grupo."}
+          </p>
+        </div>
+        <div className="card">
+          <h2 className="section-title">Delivery</h2>
+          <p className="leading-relaxed text-white/90">
+            {extra.delivery ?? "Las apps permiten sumar un extra opcional; efectivo pequeño también funciona."}
+          </p>
+        </div>
+        <div className="card">
+          <h2 className="section-title">Propinas con tarjeta vs efectivo</h2>
+          <p className="leading-relaxed text-white/90">
+            {extra.tarjetaVsEfectivo ??
+              "Pregunta si prefieren efectivo; algunos POS permiten agregar la propina directamente."}
+          </p>
+        </div>
+      </section>
+
+      <section className="card">
+        <h2 className="section-title">Errores comunes</h2>
+        <ul className="mt-2 list-disc list-inside space-y-1 text-white/90">
+          {errores.map((error) => (
+            <li key={error}>{error}</li>
+          ))}
+        </ul>
+      </section>
+
       <section>
         <h2 className="section-title">Preguntas frecuentes</h2>
         <FAQAccordion faqs={pais.faqs} />
+      </section>
+
+      <section className="card">
+        <h2 className="section-title">Países relacionados</h2>
+        <p className="muted mb-3">
+          Explora otras guías con costumbres parecidas o destinos populares.
+        </p>
+        <div className="grid gap-2 sm:grid-cols-2">
+          {relacionados.map((rel) => (
+            <Link
+              key={rel.slug}
+              href={`/pais/${rel.slug}`}
+              className="card bg-white/5 hover:border-accent/40 transition-colors"
+            >
+              <p className="font-semibold">{rel.name}</p>
+              <p className="text-sm text-white/70">¿Propina? {rel.seDejaPropina}</p>
+              {rel.continente && (
+                <p className="text-xs text-white/60">Continente: {rel.continente}</p>
+              )}
+            </Link>
+          ))}
+        </div>
       </section>
     </div>
   );

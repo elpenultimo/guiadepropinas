@@ -33,6 +33,16 @@ const jsonLd = {
 };
 
 export default function HomePage() {
+  const paisesPorContinente = paises.reduce(
+    (acc, pais) => {
+      if (!pais.continente) return acc;
+      if (!acc[pais.continente]) acc[pais.continente] = [];
+      acc[pais.continente].push(pais);
+      return acc;
+    },
+    {} as Record<string, typeof paises>
+  );
+
   return (
     <>
       <script
@@ -44,8 +54,9 @@ export default function HomePage() {
           <p className="badge">Actualizado 2025</p>
           <h1 className="text-4xl font-bold leading-tight">Propinas en el mundo</h1>
           <p className="muted max-w-2xl leading-relaxed">
-            Aprende cuánto dejar en restaurantes, taxis y hoteles sin llamar la atención.
-            Información condensada, en español y lista para viajar.
+            Aprende cuánto dejar, cuándo dejar y dónde dejar propina en cada destino. Resuelve tus
+            dudas de tipping para restaurantes, taxis, tours y hoteles con información directa en
+            español, lista para viajeros.
           </p>
           <div className="card">
             <p className="font-semibold mb-2">Busca un país</p>
@@ -66,6 +77,25 @@ export default function HomePage() {
                     ¿Se deja propina? <span className="font-semibold">{pais.seDejaPropina}</span>
                   </p>
                 </Link>
+              ))}
+            </div>
+          </div>
+          <div className="card">
+            <h2 className="section-title">Países por continente</h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              {Object.entries(paisesPorContinente).map(([continente, lista]) => (
+                <div key={continente} className="card bg-white/5">
+                  <p className="font-semibold mb-2">{continente}</p>
+                  <ul className="space-y-1 text-sm text-white/80">
+                    {lista.map((pais) => (
+                      <li key={pais.slug}>
+                        <Link className="hover:text-white" href={`/pais/${pais.slug}`}>
+                          {pais.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
             </div>
           </div>
