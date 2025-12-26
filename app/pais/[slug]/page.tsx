@@ -84,13 +84,42 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
         "Confirmar si ya hay cargo de servicio en la cuenta.",
       ];
 
+  const populares = [
+    "mexico",
+    "espana",
+    "estados-unidos",
+    "japon",
+    "francia",
+    "italia",
+    "colombia",
+    "brasil",
+    "argentina",
+    "peru",
+    "reino-unido",
+    "alemania",
+  ];
   const relacionadosBase = pais.continente
     ? paises.filter((p) => p.continente === pais.continente && p.slug !== pais.slug)
     : [];
-  const relacionadosFallback = paises.filter(
-    (p) => p.slug !== pais.slug && !relacionadosBase.some((base) => base.slug === p.slug)
-  );
-  const relacionados = [...relacionadosBase, ...relacionadosFallback].slice(0, 6);
+  const relacionadosPopulares = populares
+    .map((slug) => paises.find((p) => p.slug === slug))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p))
+    .filter((p) => p.slug !== pais.slug && !relacionadosBase.some((base) => base.slug === p.slug));
+
+  const maxRelacionados = 8;
+  const mezclados: typeof paises = [];
+  const mayorLongitud = Math.max(relacionadosBase.length, relacionadosPopulares.length);
+
+  for (let i = 0; i < mayorLongitud; i++) {
+    const cercano = relacionadosBase[i];
+    const popular = relacionadosPopulares[i];
+    if (cercano) mezclados.push(cercano);
+    if (popular) mezclados.push(popular);
+  }
+
+  const usados = new Set(mezclados.map((p) => p.slug));
+  const relleno = paises.filter((p) => p.slug !== pais.slug && !usados.has(p.slug));
+  const relacionados = [...mezclados, ...relleno].slice(0, maxRelacionados);
 
   return (
     <div className="space-y-6">
@@ -103,7 +132,7 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <nav aria-label="Breadcrumb" className="text-sm text-white/70">
-        <ol className="flex flex-wrap items-center gap-2">
+        <ol className="flex flex-wrap items-center gap-2 rounded-md bg-white/5 px-3 py-2">
           <li>
             <Link href="/" className="hover:text-white">
               Inicio
@@ -181,7 +210,7 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
       </section>
 
       <section className="card">
-        <h2 className="section-title">Errores comunes</h2>
+        <h2 className="section-title">Errores comunes al dejar propina</h2>
         <ul className="mt-2 list-disc list-inside space-y-1 text-white/90">
           {errores.map((error) => (
             <li key={error}>{error}</li>
