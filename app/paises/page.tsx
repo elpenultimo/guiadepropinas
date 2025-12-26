@@ -2,23 +2,20 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { paises } from "@/data/paises";
+import { type Continente, paises } from "@/data/paises";
 
 export default function PaisesPage() {
   const [query, setQuery] = useState("");
-  const [continente, setContinente] = useState<string>("todos");
+  const [continente, setContinente] = useState<Continente | "todos">("todos");
 
-  const continentes = useMemo(
-    () =>
-      Array.from(
-        new Set(
-          paises
-            .map((pais) => pais.continente)
-            .filter((value): value is NonNullable<typeof value> => Boolean(value))
-        )
-      ),
-    []
-  );
+  const continentes: (Continente | "todos")[] = [
+    "todos",
+    "América",
+    "Europa",
+    "Asia",
+    "África",
+    "Oceanía",
+  ];
 
   const filtrados = useMemo(() => {
     const term = query.trim().toLowerCase();
@@ -37,7 +34,7 @@ export default function PaisesPage() {
         <p className="muted">Filtra por nombre y abre la guía detallada.</p>
       </header>
       <div className="card">
-        <div className="space-y-3">
+        <div className="space-y-4">
           <input
             className="input"
             placeholder="Buscar por nombre..."
@@ -47,33 +44,29 @@ export default function PaisesPage() {
           <div>
             <p className="text-sm font-semibold mb-2">Filtrar por continente</p>
             <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setContinente("todos")}
-                className={`rounded-full border px-3 py-1 text-sm transition-colors ${
-                  continente === "todos"
-                    ? "border-accent bg-accent/10 text-white"
-                    : "border-white/20 text-white/80 hover:border-white/50"
-                }`}
-              >
-                Todos
-              </button>
-              {continentes.map((item) => (
-                <button
-                  key={item}
-                  onClick={() => setContinente(item)}
-                  className={`rounded-full border px-3 py-1 text-sm transition-colors ${
-                    continente === item
-                      ? "border-accent bg-accent/10 text-white"
-                      : "border-white/20 text-white/80 hover:border-white/50"
-                  }`}
-                >
-                  {item}
-                </button>
-              ))}
+              {continentes.map((item) => {
+                const active = continente === item;
+                return (
+                  <button
+                    key={item}
+                    type="button"
+                    aria-pressed={active}
+                    onClick={() => setContinente(item)}
+                    className={`inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-slate-900 ${
+                      active
+                        ? "border-accent bg-white text-slate-900 shadow-lg"
+                        : "border-white/20 text-white/80 hover:border-white/50 hover:bg-white/5"
+                    }`}
+                  >
+                    {item === "todos" ? "Todos" : item}
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>
       </div>
+      <p className="text-sm text-white/70">Mostrando {filtrados.length} países</p>
       <div className="grid-cards">
         {filtrados.map((pais) => (
           <Link

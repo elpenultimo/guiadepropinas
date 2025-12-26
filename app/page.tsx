@@ -1,7 +1,7 @@
 import { AdSlot } from "@/components/AdSlot";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { SearchBox } from "@/components/SearchBox";
-import { paises } from "@/data/paises";
+import { type Continente, paises } from "@/data/paises";
 import Link from "next/link";
 
 const generalFaqs = [
@@ -33,14 +33,24 @@ const jsonLd = {
 };
 
 export default function HomePage() {
-  const paisesPorContinente = paises.reduce(
-    (acc, pais) => {
-      if (!pais.continente) return acc;
-      if (!acc[pais.continente]) acc[pais.continente] = [];
-      acc[pais.continente].push(pais);
+  const continentesOrden: Continente[] = [
+    "América",
+    "Europa",
+    "Asia",
+    "África",
+    "Oceanía",
+  ];
+
+  const paisesPopulares = paises.slice(0, 12);
+
+  const paisesPorContinente = continentesOrden.reduce<Record<Continente, typeof paises>>(
+    (acc, continente) => {
+      acc[continente] = paises
+        .filter((pais) => pais.continente === continente)
+        .sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
       return acc;
     },
-    {} as Record<string, typeof paises>
+    {} as Record<Continente, typeof paises>
   );
 
   return (
@@ -65,7 +75,7 @@ export default function HomePage() {
           <div className="card">
             <h2 className="section-title">Países populares</h2>
             <div className="grid-cards">
-              {paises.map((pais) => (
+              {paisesPopulares.map((pais) => (
                 <Link
                   key={pais.slug}
                   href={`/pais/${pais.slug}`}

@@ -577,6 +577,3106 @@ export const paises: Pais[] = [
       ],
     },
   },
+  {
+    name: "Brasil",
+    slug: "brasil",
+    moneda: "Real brasileño (BRL)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Brasil con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Brasil la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Brasil?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Brasil.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Colombia",
+    slug: "colombia",
+    moneda: "Peso colombiano (COP)",
+    seDejaPropina: "Sí",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Colombia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Colombia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Colombia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Colombia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Ecuador",
+    slug: "ecuador",
+    moneda: "Dólar estadounidense (USD)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Ecuador con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Ecuador la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Ecuador?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Ecuador.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Bolivia",
+    slug: "bolivia",
+    moneda: "Boliviano (BOB)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Bolivia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Bolivia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Bolivia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Bolivia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Paraguay",
+    slug: "paraguay",
+    moneda: "Guaraní paraguayo (PYG)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Paraguay con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Paraguay la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Paraguay?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Paraguay.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Uruguay",
+    slug: "uruguay",
+    moneda: "Peso uruguayo (UYU)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Uruguay con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Uruguay la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Uruguay?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Uruguay.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Venezuela",
+    slug: "venezuela",
+    moneda: "Bolívar (VES) y USD en zonas turísticas",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Venezuela con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Venezuela la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Venezuela?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Venezuela.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Guatemala",
+    slug: "guatemala",
+    moneda: "Quetzal (GTQ)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Guatemala con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Guatemala la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Guatemala?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Guatemala.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Costa Rica",
+    slug: "costa-rica",
+    moneda: "Colón costarricense (CRC)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Costa Rica con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Costa Rica la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Costa Rica?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Costa Rica.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Panamá",
+    slug: "panama",
+    moneda: "Balboa y USD",
+    seDejaPropina: "Sí",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Panamá con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Panamá la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Panamá?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Panamá.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "República Dominicana",
+    slug: "republica-dominicana",
+    moneda: "Peso dominicano (DOP)",
+    seDejaPropina: "Sí",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de República Dominicana con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En República Dominicana la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en República Dominicana?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en República Dominicana.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Cuba",
+    slug: "cuba",
+    moneda: "Peso cubano (CUP)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Cuba con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Cuba la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Cuba?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Cuba.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Jamaica",
+    slug: "jamaica",
+    moneda: "Dólar jamaiquino (JMD)",
+    seDejaPropina: "Sí",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Jamaica con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Jamaica la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Jamaica?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Jamaica.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Bahamas",
+    slug: "bahamas",
+    moneda: "Dólar bahameño (BSD)",
+    seDejaPropina: "Sí",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Bahamas con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Bahamas la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Bahamas?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Bahamas.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Barbados",
+    slug: "barbados",
+    moneda: "Dólar de Barbados (BBD)",
+    seDejaPropina: "Sí",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Barbados con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Barbados la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Barbados?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Barbados.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Trinidad y Tobago",
+    slug: "trinidad-y-tobago",
+    moneda: "Dólar de Trinidad y Tobago (TTD)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Trinidad y Tobago con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Trinidad y Tobago la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Trinidad y Tobago?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Trinidad y Tobago.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Nicaragua",
+    slug: "nicaragua",
+    moneda: "Córdoba (NIO)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Nicaragua con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Nicaragua la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Nicaragua?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Nicaragua.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Honduras",
+    slug: "honduras",
+    moneda: "Lempira (HNL)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Honduras con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Honduras la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Honduras?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Honduras.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "El Salvador",
+    slug: "el-salvador",
+    moneda: "Dólar estadounidense (USD)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de El Salvador con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En El Salvador la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en El Salvador?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en El Salvador.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Haití",
+    slug: "haiti",
+    moneda: "Gourde (HTG)",
+    seDejaPropina: "Opcional",
+    continente: "América",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Haití con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Haití la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Haití?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Haití.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Portugal",
+    slug: "portugal",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Portugal con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Portugal la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Portugal?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Portugal.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Países Bajos",
+    slug: "paises-bajos",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Países Bajos con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Países Bajos la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Países Bajos?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Países Bajos.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Bélgica",
+    slug: "belgica",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Bélgica con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Bélgica la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Bélgica?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Bélgica.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Suiza",
+    slug: "suiza",
+    moneda: "Franco suizo (CHF)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Suiza con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Suiza la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Suiza?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Suiza.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Austria",
+    slug: "austria",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Austria con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Austria la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Austria?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Austria.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Suecia",
+    slug: "suecia",
+    moneda: "Corona sueca (SEK)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Suecia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Suecia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Suecia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Suecia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Noruega",
+    slug: "noruega",
+    moneda: "Corona noruega (NOK)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Noruega con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Noruega la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Noruega?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Noruega.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Dinamarca",
+    slug: "dinamarca",
+    moneda: "Corona danesa (DKK)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Dinamarca con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Dinamarca la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Dinamarca?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Dinamarca.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Finlandia",
+    slug: "finlandia",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Finlandia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Finlandia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Finlandia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Finlandia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Irlanda",
+    slug: "irlanda",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Irlanda con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Irlanda la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Irlanda?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Irlanda.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Islandia",
+    slug: "islandia",
+    moneda: "Corona islandesa (ISK)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Islandia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Islandia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Islandia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Islandia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Polonia",
+    slug: "polonia",
+    moneda: "Zloty (PLN)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Polonia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Polonia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Polonia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Polonia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "República Checa",
+    slug: "republica-checa",
+    moneda: "Corona checa (CZK)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de República Checa con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En República Checa la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en República Checa?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en República Checa.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Hungría",
+    slug: "hungria",
+    moneda: "Forinto húngaro (HUF)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Hungría con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Hungría la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Hungría?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Hungría.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Rumania",
+    slug: "rumania",
+    moneda: "Leu rumano (RON)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Rumania con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Rumania la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Rumania?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Rumania.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Bulgaria",
+    slug: "bulgaria",
+    moneda: "Lev búlgaro (BGN)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Bulgaria con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Bulgaria la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Bulgaria?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Bulgaria.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Grecia",
+    slug: "grecia",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Grecia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Grecia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Grecia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Grecia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Turquía",
+    slug: "turquia",
+    moneda: "Lira turca (TRY)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Turquía con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Turquía la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Turquía?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Turquía.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Croacia",
+    slug: "croacia",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Croacia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Croacia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Croacia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Croacia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Eslovenia",
+    slug: "eslovenia",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Eslovenia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Eslovenia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Eslovenia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Eslovenia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Eslovaquia",
+    slug: "eslovaquia",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Eslovaquia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Eslovaquia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Eslovaquia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Eslovaquia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Serbia",
+    slug: "serbia",
+    moneda: "Dinar serbio (RSD)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Serbia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Serbia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Serbia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Serbia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Bosnia y Herzegovina",
+    slug: "bosnia-y-herzegovina",
+    moneda: "Marco convertible (BAM)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Bosnia y Herzegovina con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Bosnia y Herzegovina la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Bosnia y Herzegovina?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Bosnia y Herzegovina.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Montenegro",
+    slug: "montenegro",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Montenegro con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Montenegro la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Montenegro?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Montenegro.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Albania",
+    slug: "albania",
+    moneda: "Lek (ALL)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Albania con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Albania la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Albania?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Albania.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Macedonia del Norte",
+    slug: "macedonia-del-norte",
+    moneda: "Dinar macedonio (MKD)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Macedonia del Norte con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Macedonia del Norte la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Macedonia del Norte?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Macedonia del Norte.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Ucrania",
+    slug: "ucrania",
+    moneda: "Grivna (UAH)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Ucrania con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Ucrania la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Ucrania?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Ucrania.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Estonia",
+    slug: "estonia",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Estonia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Estonia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Estonia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Estonia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Letonia",
+    slug: "letonia",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Letonia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Letonia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Letonia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Letonia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Lituania",
+    slug: "lituania",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Lituania con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Lituania la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Lituania?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Lituania.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Luxemburgo",
+    slug: "luxemburgo",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Luxemburgo con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Luxemburgo la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Luxemburgo?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Luxemburgo.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Malta",
+    slug: "malta",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Malta con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Malta la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Malta?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Malta.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Chipre",
+    slug: "chipre",
+    moneda: "Euro (EUR)",
+    seDejaPropina: "Opcional",
+    continente: "Europa",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Chipre con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Chipre la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Chipre?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Chipre.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "China",
+    slug: "china",
+    moneda: "Yuan (CNY)",
+    seDejaPropina: "No",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "La propina no es costumbre en restaurantes de China; solo deja monedas si el servicio fue excepcional.",
+      taxis: "No se espera propina en taxis; paga la tarifa exacta salvo que quieras redondear por cortesía.",
+      hoteles: "En hoteles de gama alta se puede dejar un pequeño extra en efectivo, pero no es obligatorio.",
+    },
+    notas: [
+      "En China la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en China?",
+        a: "Generalmente no; solo en contextos turísticos algunos meseros aceptan un pequeño extra.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en China.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Corea del Sur",
+    slug: "corea-del-sur",
+    moneda: "Won surcoreano (KRW)",
+    seDejaPropina: "No",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "La propina no es costumbre en restaurantes de Corea del Sur; solo deja monedas si el servicio fue excepcional.",
+      taxis: "No se espera propina en taxis; paga la tarifa exacta salvo que quieras redondear por cortesía.",
+      hoteles: "En hoteles de gama alta se puede dejar un pequeño extra en efectivo, pero no es obligatorio.",
+    },
+    notas: [
+      "En Corea del Sur la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Corea del Sur?",
+        a: "Generalmente no; solo en contextos turísticos algunos meseros aceptan un pequeño extra.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Corea del Sur.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "India",
+    slug: "india",
+    moneda: "Rupia india (INR)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de India con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En India la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en India?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en India.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Tailandia",
+    slug: "tailandia",
+    moneda: "Baht (THB)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Tailandia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Tailandia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Tailandia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Tailandia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Vietnam",
+    slug: "vietnam",
+    moneda: "Dong vietnamita (VND)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Vietnam con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Vietnam la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Vietnam?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Vietnam.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Indonesia",
+    slug: "indonesia",
+    moneda: "Rupia indonesia (IDR)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Indonesia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Indonesia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Indonesia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Indonesia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Filipinas",
+    slug: "filipinas",
+    moneda: "Peso filipino (PHP)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Filipinas con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Filipinas la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Filipinas?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Filipinas.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Malasia",
+    slug: "malasia",
+    moneda: "Ringgit (MYR)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Malasia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Malasia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Malasia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Malasia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Singapur",
+    slug: "singapur",
+    moneda: "Dólar de Singapur (SGD)",
+    seDejaPropina: "No",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "La propina no es costumbre en restaurantes de Singapur; solo deja monedas si el servicio fue excepcional.",
+      taxis: "No se espera propina en taxis; paga la tarifa exacta salvo que quieras redondear por cortesía.",
+      hoteles: "En hoteles de gama alta se puede dejar un pequeño extra en efectivo, pero no es obligatorio.",
+    },
+    notas: [
+      "En Singapur la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Singapur?",
+        a: "Generalmente no; solo en contextos turísticos algunos meseros aceptan un pequeño extra.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Singapur.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Taiwán",
+    slug: "taiwan",
+    moneda: "Nuevo dólar taiwanés (TWD)",
+    seDejaPropina: "No",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "La propina no es costumbre en restaurantes de Taiwán; solo deja monedas si el servicio fue excepcional.",
+      taxis: "No se espera propina en taxis; paga la tarifa exacta salvo que quieras redondear por cortesía.",
+      hoteles: "En hoteles de gama alta se puede dejar un pequeño extra en efectivo, pero no es obligatorio.",
+    },
+    notas: [
+      "En Taiwán la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Taiwán?",
+        a: "Generalmente no; solo en contextos turísticos algunos meseros aceptan un pequeño extra.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Taiwán.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Hong Kong",
+    slug: "hong-kong",
+    moneda: "Dólar de Hong Kong (HKD)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Hong Kong con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Hong Kong la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Hong Kong?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Hong Kong.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Emiratos Árabes Unidos",
+    slug: "emiratos-arabes-unidos",
+    moneda: "Dirham (AED)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Emiratos Árabes Unidos con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Emiratos Árabes Unidos la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Emiratos Árabes Unidos?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Emiratos Árabes Unidos.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Qatar",
+    slug: "qatar",
+    moneda: "Riyal qatarí (QAR)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Qatar con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Qatar la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Qatar?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Qatar.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Arabia Saudita",
+    slug: "arabia-saudita",
+    moneda: "Riyal saudí (SAR)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Arabia Saudita con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Arabia Saudita la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Arabia Saudita?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Arabia Saudita.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Israel",
+    slug: "israel",
+    moneda: "Nuevo séquel (ILS)",
+    seDejaPropina: "Sí",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Israel con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Israel la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Israel?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Israel.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Jordania",
+    slug: "jordania",
+    moneda: "Dinar jordano (JOD)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Jordania con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Jordania la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Jordania?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Jordania.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Líbano",
+    slug: "libano",
+    moneda: "Libra libanesa (LBP)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Líbano con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Líbano la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Líbano?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Líbano.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Camboya",
+    slug: "camboya",
+    moneda: "Riel (KHR)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Camboya con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Camboya la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Camboya?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Camboya.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Laos",
+    slug: "laos",
+    moneda: "Kip laosiano (LAK)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Laos con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Laos la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Laos?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Laos.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Nepal",
+    slug: "nepal",
+    moneda: "Rupia nepalesa (NPR)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Nepal con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Nepal la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Nepal?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Nepal.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Sri Lanka",
+    slug: "sri-lanka",
+    moneda: "Rupia de Sri Lanka (LKR)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Sri Lanka con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Sri Lanka la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Sri Lanka?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Sri Lanka.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Pakistán",
+    slug: "pakistan",
+    moneda: "Rupia pakistaní (PKR)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Pakistán con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Pakistán la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Pakistán?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Pakistán.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Bangladesh",
+    slug: "bangladesh",
+    moneda: "Taka (BDT)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Bangladesh con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Bangladesh la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Bangladesh?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Bangladesh.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Kazajistán",
+    slug: "kazajistan",
+    moneda: "Tenge (KZT)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Kazajistán con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Kazajistán la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Kazajistán?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Kazajistán.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Uzbekistán",
+    slug: "uzbekistan",
+    moneda: "Som uzbeko (UZS)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Uzbekistán con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Uzbekistán la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Uzbekistán?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Uzbekistán.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Georgia",
+    slug: "georgia",
+    moneda: "Lari (GEL)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Georgia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Georgia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Georgia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Georgia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Armenia",
+    slug: "armenia",
+    moneda: "Dram armenio (AMD)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Armenia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Armenia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Armenia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Armenia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Azerbaiyán",
+    slug: "azerbaiyan",
+    moneda: "Manat azerbaiyano (AZN)",
+    seDejaPropina: "Opcional",
+    continente: "Asia",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Azerbaiyán con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Azerbaiyán la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Azerbaiyán?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Azerbaiyán.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Marruecos",
+    slug: "marruecos",
+    moneda: "Dirham marroquí (MAD)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Marruecos con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Marruecos la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Marruecos?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Marruecos.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Túnez",
+    slug: "tunez",
+    moneda: "Dinar tunecino (TND)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Túnez con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Túnez la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Túnez?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Túnez.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Egipto",
+    slug: "egipto",
+    moneda: "Libra egipcia (EGP)",
+    seDejaPropina: "Sí",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Egipto con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Egipto la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Egipto?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Egipto.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Sudáfrica",
+    slug: "sudafrica",
+    moneda: "Rand sudafricano (ZAR)",
+    seDejaPropina: "Sí",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Sudáfrica con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Sudáfrica la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Sudáfrica?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Sudáfrica.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Kenia",
+    slug: "kenia",
+    moneda: "Chelín keniano (KES)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Kenia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Kenia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Kenia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Kenia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Tanzania",
+    slug: "tanzania",
+    moneda: "Chelín tanzano (TZS)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Tanzania con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Tanzania la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Tanzania?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Tanzania.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Etiopía",
+    slug: "etiopia",
+    moneda: "Birr etíope (ETB)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Etiopía con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Etiopía la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Etiopía?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Etiopía.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Ghana",
+    slug: "ghana",
+    moneda: "Cedi ghanés (GHS)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Ghana con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Ghana la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Ghana?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Ghana.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Nigeria",
+    slug: "nigeria",
+    moneda: "Naira (NGN)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Nigeria con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Nigeria la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Nigeria?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Nigeria.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Senegal",
+    slug: "senegal",
+    moneda: "Franco CFA (XOF)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Senegal con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Senegal la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Senegal?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Senegal.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Uganda",
+    slug: "uganda",
+    moneda: "Chelín ugandés (UGX)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Uganda con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Uganda la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Uganda?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Uganda.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Ruanda",
+    slug: "ruanda",
+    moneda: "Franco ruandés (RWF)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Ruanda con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Ruanda la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Ruanda?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Ruanda.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Namibia",
+    slug: "namibia",
+    moneda: "Dólar namibio (NAD)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Namibia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Namibia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Namibia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Namibia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Botsuana",
+    slug: "botsuana",
+    moneda: "Pula (BWP)",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Botsuana con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Botsuana la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Botsuana?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Botsuana.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Zimbabue",
+    slug: "zimbabue",
+    moneda: "Dólar estadounidense (USD) y dólar zimbabuense",
+    seDejaPropina: "Opcional",
+    continente: "África",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Zimbabue con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Zimbabue la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Zimbabue?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Zimbabue.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Australia",
+    slug: "australia",
+    moneda: "Dólar australiano (AUD)",
+    seDejaPropina: "Opcional",
+    continente: "Oceanía",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Australia con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Australia la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Australia?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Australia.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Nueva Zelanda",
+    slug: "nueva-zelanda",
+    moneda: "Dólar neozelandés (NZD)",
+    seDejaPropina: "Opcional",
+    continente: "Oceanía",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Nueva Zelanda con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Nueva Zelanda la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Nueva Zelanda?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Nueva Zelanda.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Fiyi",
+    slug: "fiyi",
+    moneda: "Dólar fiyiano (FJD)",
+    seDejaPropina: "Opcional",
+    continente: "Oceanía",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Fiyi con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Fiyi la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Fiyi?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Fiyi.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
+  {
+    name: "Papúa Nueva Guinea",
+    slug: "papua-nueva-guinea",
+    moneda: "Kina (PGK)",
+    seDejaPropina: "Opcional",
+    continente: "Oceanía",
+    resumen: {
+      restaurantes: "10% sugerido en restaurantes de Papúa Nueva Guinea con servicio completo; en locales sencillos basta con redondear.",
+      taxis: "No es obligatorio en taxis, pero redondear la tarifa o dejar monedas es un gesto amable.",
+      hoteles: "1-3 USD equivalentes por maleta o por noche de limpieza suelen ser bien recibidos en hoteles.",
+    },
+    notas: [
+      "En Papúa Nueva Guinea la propina se ve como un agradecimiento, no una obligación legal.",
+      "Si ya ves un cargo por servicio, puedes ajustar la propina adicional o no agregar más.",
+    ],
+    faqs: [
+      {
+        q: "¿La propina es obligatoria en Papúa Nueva Guinea?",
+        a: "No, se deja a discreción del cliente y depende del servicio que recibas.",
+      },
+      {
+        q: "¿Cómo se maneja en bares o cafés?",
+        a: "En bares se redondea la cuenta o se deja un 5-10% cuando hay atención en mesa en Papúa Nueva Guinea.",
+      },
+      {
+        q: "¿Qué pasa con tours o choferes privados?",
+        a: "Para guías y choferes se acostumbra un monto fijo o 5-10% al final del servicio si quedaste conforme.",
+      },
+    ],
+  },
+
 ];
 
 export const findPaisBySlug = (slug: string): Pais | undefined =>
