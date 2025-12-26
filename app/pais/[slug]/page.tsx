@@ -11,6 +11,12 @@ export function generateStaticParams() {
   return paises.map((pais) => ({ slug: pais.slug }));
 }
 
+const baseUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://guiadepropinas.vercel.app";
+const normalizedBaseUrl = baseUrl.endsWith("/")
+  ? baseUrl.slice(0, -1)
+  : baseUrl;
+
 export function generateMetadata({
   params,
 }: {
@@ -27,7 +33,7 @@ export function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `https://guiadepropinas.vercel.app/pais/${pais.slug}`,
+      url: `${normalizedBaseUrl}/pais/${pais.slug}`,
     },
   };
 }
@@ -57,19 +63,19 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
         "@type": "ListItem",
         position: 1,
         name: "Inicio",
-        item: "https://guiadepropinas.vercel.app/",
+        item: normalizedBaseUrl,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Países",
-        item: "https://guiadepropinas.vercel.app/paises",
+        item: `${normalizedBaseUrl}/paises`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: pais.name,
-        item: `https://guiadepropinas.vercel.app/pais/${pais.slug}`,
+        item: `${normalizedBaseUrl}/pais/${pais.slug}`,
       },
     ],
   };
@@ -107,19 +113,23 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
     .filter((p) => p.slug !== pais.slug && !relacionadosBase.some((base) => base.slug === p.slug));
 
   const maxRelacionados = 8;
-  const mezclados: typeof paises = [];
-  const mayorLongitud = Math.max(relacionadosBase.length, relacionadosPopulares.length);
+  const relacionadosOrdenados: typeof paises = [];
+  const usados = new Set<string>();
 
-  for (let i = 0; i < mayorLongitud; i++) {
-    const cercano = relacionadosBase[i];
-    const popular = relacionadosPopulares[i];
-    if (cercano) mezclados.push(cercano);
-    if (popular) mezclados.push(popular);
-  }
+  const agregarPais = (lista: typeof paises) => {
+    for (const candidato of lista) {
+      if (relacionadosOrdenados.length >= maxRelacionados) return;
+      if (usados.has(candidato.slug) || candidato.slug === pais.slug) continue;
+      relacionadosOrdenados.push(candidato);
+      usados.add(candidato.slug);
+    }
+  };
 
-  const usados = new Set(mezclados.map((p) => p.slug));
-  const relleno = paises.filter((p) => p.slug !== pais.slug && !usados.has(p.slug));
-  const relacionados = [...mezclados, ...relleno].slice(0, maxRelacionados);
+  agregarPais(relacionadosBase);
+  agregarPais(relacionadosPopulares);
+  agregarPais(
+    paises.filter((p) => p.slug !== pais.slug && !usados.has(p.slug))
+  );
 
   return (
     <div className="space-y-6">
@@ -131,21 +141,21 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <nav aria-label="Breadcrumb" className="text-sm text-white/70">
-        <ol className="flex flex-wrap items-center gap-2 rounded-md bg-white/5 px-3 py-2">
+      <nav aria-label="Breadcrumb" className="text-xs text-white/60">
+        <ol className="flex flex-wrap items-center gap-2">
           <li>
             <Link href="/" className="hover:text-white">
               Inicio
             </Link>
           </li>
-          <li className="text-white/50">/</li>
+          <li className="text-white/40">/</li>
           <li>
             <Link href="/paises" className="hover:text-white">
               Países
             </Link>
           </li>
-          <li className="text-white/50">/</li>
-          <li className="font-semibold text-white">{pais.name}</li>
+          <li className="text-white/40">/</li>
+          <li className="font-semibold text-white/80">{pais.name}</li>
         </ol>
       </nav>
       <header className="space-y-1">
@@ -229,16 +239,17 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
           Explora otras guías con costumbres parecidas o destinos populares.
         </p>
         <div className="grid gap-2 sm:grid-cols-2">
-          {relacionados.map((rel) => (
+          {relacionadosOrdenados.map((rel) => (
             <Link
               key={rel.slug}
               href={`/pais/${rel.slug}`}
               className="card bg-white/5 hover:border-accent/40 transition-colors"
             >
               <p className="font-semibold">{rel.name}</p>
-              <p className="text-sm text-white/70">¿Propina? {rel.seDejaPropina}</p>
               {rel.continente && (
-                <p className="text-xs text-white/60">Continente: {rel.continente}</p>
+                <span className="inline-flex items-center rounded-full bg-white/10 px-2 py-1 text-[11px] text-white/70">
+                  {rel.continente}
+                </span>
               )}
             </Link>
           ))}
