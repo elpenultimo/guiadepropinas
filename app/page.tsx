@@ -43,15 +43,10 @@ export default function HomePage() {
 
   const paisesPopulares = paises.slice(0, 12);
 
-  const paisesPorContinente = continentesOrden.reduce<Record<Continente, typeof paises>>(
-    (acc, continente) => {
-      acc[continente] = paises
-        .filter((pais) => pais.continente === continente)
-        .sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
-      return acc;
-    },
-    {} as Record<Continente, typeof paises>
-  );
+  const continentesResumen = continentesOrden.map((nombre) => ({
+    nombre,
+    total: paises.filter((pais) => pais.continente === nombre).length,
+  }));
 
   return (
     <>
@@ -91,21 +86,18 @@ export default function HomePage() {
             </div>
           </div>
           <div className="card">
-            <h2 className="section-title">Países por continente</h2>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {Object.entries(paisesPorContinente).map(([continente, lista]) => (
-                <div key={continente} className="card bg-white/5">
-                  <p className="font-semibold mb-2">{continente}</p>
-                  <ul className="space-y-1 text-sm text-white/80">
-                    {lista.map((pais) => (
-                      <li key={pais.slug}>
-                        <Link className="hover:text-white" href={`/pais/${pais.slug}`}>
-                          {pais.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+            <h2 className="section-title">Explora por continente</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {continentesResumen.map(({ nombre, total }) => (
+                <Link
+                  key={nombre}
+                  href={`/paises?continente=${encodeURIComponent(nombre)}`}
+                  className="card bg-white/5 hover:border-accent/50 hover:-translate-y-0.5 transition"
+                >
+                  <p className="font-semibold text-lg">{nombre}</p>
+                  <p className="muted text-sm">{total} países</p>
+                  <p className="text-sm mt-3 text-accent">Ver guía completa →</p>
+                </Link>
               ))}
             </div>
           </div>

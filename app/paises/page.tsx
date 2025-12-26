@@ -1,21 +1,41 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { type Continente, paises } from "@/data/paises";
+
+const CONTINENTES_DISPONIBLES: Continente[] = [
+  "América",
+  "Europa",
+  "Asia",
+  "África",
+  "Oceanía",
+];
 
 export default function PaisesPage() {
   const [query, setQuery] = useState("");
   const [continente, setContinente] = useState<Continente | "todos">("todos");
 
-  const continentes: (Continente | "todos")[] = [
-    "todos",
-    "América",
-    "Europa",
-    "Asia",
-    "África",
-    "Oceanía",
-  ];
+  const searchParams = useSearchParams();
+
+  const continentes: (Continente | "todos")[] = ["todos", ...CONTINENTES_DISPONIBLES];
+
+  useEffect(() => {
+    const continenteParam = searchParams.get("continente");
+    if (!continenteParam) {
+      setContinente((prev) => (prev === "todos" ? prev : "todos"));
+      return;
+    }
+
+    const match = CONTINENTES_DISPONIBLES.find(
+      (item) => item.toLowerCase() === continenteParam.toLowerCase()
+    );
+
+    if (match) {
+      setContinente((prev) => (prev === match ? prev : match));
+    }
+  }, [searchParams]);
 
   const filtrados = useMemo(() => {
     const term = query.trim().toLowerCase();
