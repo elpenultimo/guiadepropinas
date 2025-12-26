@@ -43,15 +43,10 @@ export default function HomePage() {
 
   const paisesPopulares = paises.slice(0, 12);
 
-  const paisesPorContinente = continentesOrden.reduce<Record<Continente, typeof paises>>(
-    (acc, continente) => {
-      acc[continente] = paises
-        .filter((pais) => pais.continente === continente)
-        .sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
-      return acc;
-    },
-    {} as Record<Continente, typeof paises>
-  );
+  const continentesCompactos = continentesOrden.map((continente) => {
+    const totalPaises = paises.filter((pais) => pais.continente === continente).length;
+    return { continente, totalPaises };
+  });
 
   return (
     <>
@@ -93,19 +88,20 @@ export default function HomePage() {
           <div className="card">
             <h2 className="section-title">Países por continente</h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              {Object.entries(paisesPorContinente).map(([continente, lista]) => (
-                <div key={continente} className="card bg-white/5">
-                  <p className="font-semibold mb-2">{continente}</p>
-                  <ul className="space-y-1 text-sm text-white/80">
-                    {lista.map((pais) => (
-                      <li key={pais.slug}>
-                        <Link className="hover:text-white" href={`/pais/${pais.slug}`}>
-                          {pais.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              {continentesCompactos.map(({ continente, totalPaises }) => (
+                <Link
+                  key={continente}
+                  href={`/paises?continente=${encodeURIComponent(continente)}`}
+                  className="card bg-white/5 hover:border-accent/40 transition-colors"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-lg font-semibold">{continente}</p>
+                      <p className="muted text-sm">{totalPaises} países</p>
+                    </div>
+                    <span className="text-accent font-semibold">Ver lista →</span>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
