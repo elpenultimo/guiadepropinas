@@ -14,6 +14,26 @@ const basePaths: SitemapEntry[] = [
   { loc: `${SITE_URL}/`, changefreq: "weekly", priority: 1.0 },
   { loc: `${SITE_URL}/paises`, changefreq: "weekly", priority: 0.9 },
   { loc: `${SITE_URL}/continentes`, changefreq: "weekly", priority: 0.8 },
+  {
+    loc: `${SITE_URL}/ranking/paises-sin-propina`,
+    changefreq: "monthly",
+    priority: 0.7,
+  },
+  {
+    loc: `${SITE_URL}/ranking/paises-mayor-propina`,
+    changefreq: "monthly",
+    priority: 0.7,
+  },
+  {
+    loc: `${SITE_URL}/guia/propina-restaurantes`,
+    changefreq: "monthly",
+    priority: 0.7,
+  },
+  {
+    loc: `${SITE_URL}/guia/propina-hoteles`,
+    changefreq: "monthly",
+    priority: 0.7,
+  },
 ];
 
 const continentPaths: SitemapEntry[] = continentesList.map((continente) => ({
