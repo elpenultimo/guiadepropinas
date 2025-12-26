@@ -86,8 +86,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="card">
-            <h2 className="section-title">Países por continente</h2>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <h2 className="section-title">Explora por continente</h2>
+            <div className="grid gap-4 md:grid-cols-2">
               {continentesCompactos.map(({ continente, totalPaises }) => (
                 <Link
                   key={continente}
