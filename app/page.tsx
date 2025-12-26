@@ -1,6 +1,7 @@
 import { AdSlot } from "@/components/AdSlot";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { SearchBox } from "@/components/SearchBox";
+import { nombreToSlug } from "@/data/continentes";
 import { type Continente, paises } from "@/data/paises";
 import Link from "next/link";
 
@@ -91,7 +92,7 @@ export default function HomePage() {
               {continentesCompactos.map(({ continente, totalPaises }) => (
                 <Link
                   key={continente}
-                  href={`/paises?continente=${encodeURIComponent(continente)}`}
+                  href={`/continente/${nombreToSlug[continente]}`}
                   className="card bg-white/5 hover:border-accent/40 transition-colors"
                 >
                   <div className="flex items-center justify-between">
