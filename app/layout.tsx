@@ -4,20 +4,39 @@ import { NavBar } from "@/components/NavBar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://guiadepropinas.vercel.app"),
+  metadataBase: new URL("https://guiadepropinas.com"),
+
   title: {
     default: "Guía de Propinas",
     template: "%s | Guía de Propinas",
   },
-  description: "Consejos rápidos para dejar propina en restaurantes, taxis y hoteles alrededor del mundo.",
-  openGraph: {
-    title: "Guía de Propinas",
-    description: "Resumen práctico por país para saber cuándo y cuánto dejar.",
-    url: "https://guiadepropinas.vercel.app",
-    siteName: "Guía de Propinas",
-  },
+
+  description:
+    "Guía clara y actualizada para saber cuánto dejar de propina en cada país. Restaurantes, taxis, hoteles y tours.",
+
   alternates: {
-    canonical: "https://guiadepropinas.vercel.app",
+    canonical: "https://guiadepropinas.com",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
+
+  openGraph: {
+    type: "website",
+    url: "https://guiadepropinas.com",
+    siteName: "Guía de Propinas",
+    title: "Guía de Propinas",
+    description:
+      "Descubre cuándo y cuánto dejar de propina en cada país del mundo. Información clara para viajeros.",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Guía de Propinas",
+      },
+    ],
   },
 };
 
