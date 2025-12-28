@@ -1,5 +1,6 @@
 import { AdSlot } from "@/components/AdSlot";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { CountryFlag } from "@/components/CountryFlag";
 import { findPaisBySlug, paises } from "@/data/paises";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -160,7 +161,10 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
       </nav>
       <header className="space-y-1">
         <p className="badge">Guía rápida</p>
-        <h1 className="text-3xl font-bold">Propinas en {pais.name}</h1>
+        <div className="flex items-center gap-3">
+          <CountryFlag iso2={pais.iso2} size={30} />
+          <h1 className="text-3xl font-bold">Propinas en {pais.name}</h1>
+        </div>
         <p className="muted">Moneda: {pais.moneda}</p>
       </header>
 
