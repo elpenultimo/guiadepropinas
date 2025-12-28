@@ -2,7 +2,22 @@ import React from "react";
 import type { ComponentType, SVGProps } from "react";
 
 // Importa SOLO algunos países para partir (puedes ampliar después)
-import { CL, AR, US, MX, PE, CA } from "country-flag-icons/react/3x2";
+import {
+  CL,
+  AR,
+  US,
+  MX,
+  PE,
+  CA,
+  ES,
+  BR,
+  CO,
+  JP,
+  FR,
+  IT,
+  GB,
+  DE,
+} from "country-flag-icons/react/3x2";
 
 const FLAGS: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
   cl: CL,
@@ -11,6 +26,14 @@ const FLAGS: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
   mx: MX,
   pe: PE,
   ca: CA,
+  es: ES,
+  br: BR,
+  co: CO,
+  jp: JP,
+  fr: FR,
+  it: IT,
+  gb: GB,
+  de: DE,
 };
 
 type Props = {

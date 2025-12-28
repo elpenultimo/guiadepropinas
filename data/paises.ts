@@ -22,6 +22,7 @@ export type ExtraPais = {
 export type Pais = {
   name: string;
   slug: string;
+  iso2?: string;
   moneda: string;
   seDejaPropina: "Sí" | "Opcional" | "No";
   continente?: Continente;
@@ -35,6 +36,7 @@ export const paises: Pais[] = [
   {
     name: "Chile",
     slug: "chile",
+    iso2: "cl",
     moneda: "Peso chileno (CLP)",
     seDejaPropina: "Sí",
     continente: "América",
@@ -79,6 +81,7 @@ export const paises: Pais[] = [
   {
     name: "Argentina",
     slug: "argentina",
+    iso2: "ar",
     moneda: "Peso argentino (ARS)",
     seDejaPropina: "Opcional",
     continente: "América",
@@ -125,6 +128,7 @@ export const paises: Pais[] = [
   {
     name: "Perú",
     slug: "peru",
+    iso2: "pe",
     moneda: "Sol (PEN)",
     seDejaPropina: "Opcional",
     continente: "América",
@@ -171,6 +175,7 @@ export const paises: Pais[] = [
   {
     name: "México",
     slug: "mexico",
+    iso2: "mx",
     moneda: "Peso mexicano (MXN)",
     seDejaPropina: "Sí",
     continente: "América",
@@ -217,6 +222,7 @@ export const paises: Pais[] = [
   {
     name: "Estados Unidos",
     slug: "estados-unidos",
+    iso2: "us",
     moneda: "Dólar estadounidense (USD)",
     seDejaPropina: "Sí",
     continente: "América",
@@ -263,6 +269,7 @@ export const paises: Pais[] = [
   {
     name: "Canadá",
     slug: "canada",
+    iso2: "ca",
     moneda: "Dólar canadiense (CAD)",
     seDejaPropina: "Sí",
     continente: "América",
@@ -306,6 +313,7 @@ export const paises: Pais[] = [
   {
     name: "España",
     slug: "espana",
+    iso2: "es",
     moneda: "Euro (EUR)",
     seDejaPropina: "Opcional",
     continente: "Europa",
@@ -349,6 +357,7 @@ export const paises: Pais[] = [
   {
     name: "Francia",
     slug: "francia",
+    iso2: "fr",
     moneda: "Euro (EUR)",
     seDejaPropina: "Opcional",
     continente: "Europa",
@@ -396,6 +405,7 @@ export const paises: Pais[] = [
   {
     name: "Italia",
     slug: "italia",
+    iso2: "it",
     moneda: "Euro (EUR)",
     seDejaPropina: "Opcional",
     continente: "Europa",
@@ -441,6 +451,7 @@ export const paises: Pais[] = [
   {
     name: "Reino Unido",
     slug: "reino-unido",
+    iso2: "gb",
     moneda: "Libra esterlina (GBP)",
     seDejaPropina: "Opcional",
     continente: "Europa",
@@ -487,6 +498,7 @@ export const paises: Pais[] = [
   {
     name: "Alemania",
     slug: "alemania",
+    iso2: "de",
     moneda: "Euro (EUR)",
     seDejaPropina: "Opcional",
     continente: "Europa",
@@ -533,6 +545,7 @@ export const paises: Pais[] = [
   {
     name: "Japón",
     slug: "japon",
+    iso2: "jp",
     moneda: "Yen (JPY)",
     seDejaPropina: "No",
     continente: "Asia",
@@ -580,6 +593,7 @@ export const paises: Pais[] = [
   {
     name: "Brasil",
     slug: "brasil",
+    iso2: "br",
     moneda: "Real brasileño (BRL)",
     seDejaPropina: "Opcional",
     continente: "América",
@@ -611,6 +625,7 @@ export const paises: Pais[] = [
   {
     name: "Colombia",
     slug: "colombia",
+    iso2: "co",
     moneda: "Peso colombiano (COP)",
     seDejaPropina: "Sí",
     continente: "América",
