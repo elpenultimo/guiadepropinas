@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-// ✅ Agrega este import (debes tener creado el componente)
 import { CountryFlag } from "@/components/CountryFlag";
 
 export const dynamicParams = false;
@@ -139,9 +138,6 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
   agregarPais(relacionadosPopulares);
   agregarPais(paises.filter((p) => p.slug !== pais.slug && !usados.has(p.slug)));
 
-  // ✅ iso2 opcional (no rompe build si no existe en data)
-  const iso2 = (pais as any).iso2 as string | undefined;
-
   return (
     <div className="space-y-6">
       <script
@@ -167,24 +163,26 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
             </Link>
           </li>
           <li className="text-white/40">/</li>
-          <li className="font-semibold text-white/80">{pais.name}</li>
+          <li>
+            <span className="inline-flex items-center gap-2">
+              <CountryFlag
+                countryName={pais.name}
+                size={16}
+                className="opacity-90"
+              />
+              <span className="font-semibold text-white/80">{pais.name}</span>
+            </span>
+          </li>
         </ol>
       </nav>
 
       <header className="space-y-1">
         <p className="badge">Guía rápida</p>
 
-        {/* ✅ Título con bandera (solo si existe iso2) */}
-        <h1 className="flex items-center gap-3 text-3xl font-bold">
-          {iso2 ? (
-            <CountryFlag
-              iso2={iso2}
-              label={pais.name}
-              className="h-8 w-8 rounded-sm ring-1 ring-white/20"
-            />
-          ) : null}
-          <span>Propinas en {pais.name}</span>
-        </h1>
+        <div className="flex items-center gap-3">
+          <CountryFlag countryName={pais.name} size={28} />
+          <h1 className="text-3xl font-bold">Propinas en {pais.name}</h1>
+        </div>
 
         <p className="muted">Moneda: {pais.moneda}</p>
       </header>
@@ -284,7 +282,10 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
               href={`/pais/${rel.slug}`}
               className="card bg-white/5 hover:border-accent/40 transition-colors"
             >
-              <p className="font-semibold">{rel.name}</p>
+              <div className="flex items-center gap-2">
+                <CountryFlag countryName={rel.name} size={18} />
+                <p className="font-semibold">{rel.name}</p>
+              </div>
 
               {rel.continente && (
                 <span className="inline-flex items-center rounded-full bg-white/10 px-2 py-1 text-[11px] text-white/70">
