@@ -149,6 +149,32 @@ export default function PaisesClient() {
         <h1 className="text-3xl font-bold">Países</h1>
         <p className="muted">Filtra por nombre y abre la guía detallada.</p>
       </header>
+      <div className="card bg-white/5">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <p className="font-semibold">Guías útiles</p>
+          <Link href="/continentes" className="link text-sm">
+            Explorar por continente
+          </Link>
+        </div>
+        <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-4 mt-2">
+          <Link href="/ranking/paises-sin-propina" className="card bg-white/5 hover:border-accent/40 transition-colors">
+            <p className="font-semibold">Países sin propina</p>
+            <p className="muted text-xs">Casos donde el servicio ya está incluido.</p>
+          </Link>
+          <Link href="/ranking/paises-mayor-propina" className="card bg-white/5 hover:border-accent/40 transition-colors">
+            <p className="font-semibold">Países con mayor propina</p>
+            <p className="muted text-xs">Destinos con porcentajes altos.</p>
+          </Link>
+          <Link href="/guia/propina-restaurantes" className="card bg-white/5 hover:border-accent/40 transition-colors">
+            <p className="font-semibold">Guía de restaurantes</p>
+            <p className="muted text-xs">Porcentajes rápidos y cargo por servicio.</p>
+          </Link>
+          <Link href="/guia/propina-hoteles" className="card bg-white/5 hover:border-accent/40 transition-colors">
+            <p className="font-semibold">Guía de hoteles</p>
+            <p className="muted text-xs">Limpieza, maleteros y recepción.</p>
+          </Link>
+        </div>
+      </div>
       <div className="card">
         <div className="space-y-4">
           <input

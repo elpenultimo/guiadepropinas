@@ -42,8 +42,30 @@ const paisesSinPropina = paises
   .filter((pais) => pais.seDejaPropina === "No")
   .map((pais) => ({
     ...pais,
+    tipo: "No",
     nota: notes[pais.slug] ?? "La propina no es costumbre; el servicio ya está incluido.",
   }));
+
+const paisesOpcionales = [
+  "alemania",
+  "francia",
+  "italia",
+  "reino-unido",
+  "australia",
+  "nueva-zelanda",
+  "espana",
+  "noruega",
+]
+  .map((slug) => paises.find((pais) => pais.slug === slug))
+  .filter((pais): pais is NonNullable<typeof pais> => Boolean(pais))
+  .map((pais) => ({
+    ...pais,
+    tipo: "Opcional",
+    nota:
+      "Propina opcional en casos excepcionales; suele bastar con agradecer o redondear.",
+  }));
+
+const destacados = [...paisesSinPropina, ...paisesOpcionales];
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -132,8 +154,16 @@ export default function PaisesSinPropinaPage() {
         <p className="badge">Cultura de servicio</p>
         <h1 className="text-3xl font-bold">Países donde NO se deja propina</h1>
         <p className="muted max-w-2xl">
-          En estos destinos la propina no es costumbre e incluso puede sorprender al personal. Respeta la
-          etiqueta local y usa el monto exacto al pagar.
+          En varios países la propina no forma parte de la experiencia de servicio y entregarla puede incomodar al
+          personal. Estos casos suelen tener salarios integrados en el precio o cargos de servicio obligatorios.
+        </p>
+        <p className="muted max-w-2xl">
+          Si quieres agradecer, es mejor hacerlo con palabras o reseñas positivas. Cuando la práctica es opcional,
+          limítate a redondear y evita entregar grandes billetes para no generar confusión.
+        </p>
+        <p className="muted max-w-2xl">
+          Para viajeros frecuentes, los destinos con propina opcional están marcados para que ajustes tus
+          expectativas. Revisa siempre la cuenta: si hay cargo por servicio, ya estás pagando por la atención.
         </p>
       </header>
 
@@ -146,7 +176,7 @@ export default function PaisesSinPropinaPage() {
           <Link href="/paises" className="link">Ver reglas de propina por país →</Link>
         </div>
         <div className="grid gap-3 md:grid-cols-2">
-          {paisesSinPropina.map((pais) => (
+          {destacados.map((pais) => (
             <Link
               key={pais.slug}
               href={`/pais/${pais.slug}`}
@@ -154,9 +184,20 @@ export default function PaisesSinPropinaPage() {
             >
               <div className="flex items-center justify-between">
                 <p className="text-lg font-semibold">{pais.name}</p>
-                <span className="text-xs px-2 py-1 rounded-full bg-white/10 text-white/70">
-                  {pais.continente ?? "Sin dato"}
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs px-2 py-1 rounded-full bg-white/10 text-white/70">
+                    {pais.continente ?? "Sin dato"}
+                  </span>
+                  <span
+                    className={`text-[11px] px-2 py-1 rounded-full font-semibold ${
+                      pais.tipo === "No"
+                        ? "bg-emerald-500/15 text-emerald-200"
+                        : "bg-amber-500/15 text-amber-100"
+                    }`}
+                  >
+                    {pais.tipo === "No" ? "Sin propina" : "Propina opcional"}
+                  </span>
+                </div>
               </div>
               <p className="muted text-sm">{pais.nota}</p>
             </Link>

@@ -141,6 +141,39 @@ export default function HomePage() {
               ))}
             </div>
           </div>
+
+          <div className="card">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <h2 className="section-title">Guías y rankings</h2>
+              <Link href="/paises" className="link text-sm">
+                Abrir listado de países →
+              </Link>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              <Link href="/ranking/paises-sin-propina" className="card bg-white/5 hover:border-accent/40 transition-colors">
+                <p className="font-semibold">Países sin propina</p>
+                <p className="muted text-sm">Dónde es raro o innecesario dejar efectivo extra.</p>
+              </Link>
+              <Link
+                href="/ranking/paises-mayor-propina"
+                className="card bg-white/5 hover:border-accent/40 transition-colors"
+              >
+                <p className="font-semibold">Países con mayor propina</p>
+                <p className="muted text-sm">Ranking de destinos con porcentajes altos en restaurantes.</p>
+              </Link>
+              <Link
+                href="/guia/propina-restaurantes"
+                className="card bg-white/5 hover:border-accent/40 transition-colors"
+              >
+                <p className="font-semibold">Guía de restaurantes</p>
+                <p className="muted text-sm">Cuándo revisar el servicio incluido y cuánto dejar.</p>
+              </Link>
+              <Link href="/guia/propina-hoteles" className="card bg-white/5 hover:border-accent/40 transition-colors">
+                <p className="font-semibold">Guía de hoteles</p>
+                <p className="muted text-sm">Montos rápidos para limpieza, maleteros y recepción.</p>
+              </Link>
+            </div>
+          </div>
         </div>
 
         <div className="space-y-4">

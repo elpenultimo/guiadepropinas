@@ -1,19 +1,30 @@
-/* eslint-disable @next/next/no-img-element */
-import countries from "i18n-iso-countries";
-import esLocale from "i18n-iso-countries/langs/es.json";
-
-countries.registerLocale(esLocale);
-
-const FALLBACKS: Record<string, string> = {
+const ISO_MAP: Record<string, string> = {
   "Estados Unidos": "US",
+  Canadá: "CA",
+  México: "MX",
+  Brasil: "BR",
+  Argentina: "AR",
+  Chile: "CL",
+  Colombia: "CO",
+  Perú: "PE",
+  España: "ES",
+  Francia: "FR",
+  Italia: "IT",
+  Alemania: "DE",
   "Reino Unido": "GB",
-  Rusia: "RU",
+  Irlanda: "IE",
+  Portugal: "PT",
+  Japón: "JP",
+  China: "CN",
   "Corea del Sur": "KR",
-  "Corea del Norte": "KP",
+  Singapur: "SG",
+  Tailandia: "TH",
+  Australia: "AU",
+  "Nueva Zelanda": "NZ",
+  Marruecos: "MA",
+  Turquía: "TR",
   "Emiratos Árabes Unidos": "AE",
-  "República Checa": "CZ",
-  Vietnam: "VN",
-  "Taiwán": "TW",
+  Sudáfrica: "ZA",
 };
 
 type CountryFlagProps = {
@@ -22,26 +33,26 @@ type CountryFlagProps = {
   className?: string;
 };
 
+const toFlagEmoji = (code: string) =>
+  code
+    .toUpperCase()
+    .split("")
+    .map((char) => String.fromCodePoint(char.charCodeAt(0) + 127397))
+    .join("");
+
 export function CountryFlag({ countryName, size = 24, className }: CountryFlagProps) {
-  const iso2 =
-    countries.getAlpha2Code(countryName, "es") ?? FALLBACKS[countryName] ?? null;
-
-  if (!iso2) return null;
-
-  const iso2Lower = iso2.toLowerCase();
-  const width = size;
-  const height = size;
-  const resolution = size > 28 ? "w80" : "w40";
+  const iso2 = ISO_MAP[countryName];
+  const display = iso2 ? toFlagEmoji(iso2) : countryName.slice(0, 2).toUpperCase();
 
   return (
-    <img
-      src={`https://flagcdn.com/${resolution}/${iso2Lower}.png`}
-      width={width}
-      height={height}
-      loading="lazy"
-      decoding="async"
-      alt={`Bandera de ${countryName}`}
-      className={`rounded-sm border border-white/10 shadow-sm ${className ?? ""}`}
-    />
+    <span
+      aria-label={`Bandera de ${countryName}`}
+      className={`inline-flex items-center justify-center rounded-sm border border-white/10 bg-white/5 px-1 text-base shadow-sm ${
+        className ?? ""
+      }`}
+      style={{ minWidth: size, minHeight: size, fontSize: size * 0.75 }}
+    >
+      {display}
+    </span>
   );
 }

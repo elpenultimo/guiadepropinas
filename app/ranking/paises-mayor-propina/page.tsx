@@ -12,26 +12,37 @@ const ranking = [
     slug: "estados-unidos",
     porcentaje: "18-22%",
     nota: "Cultura de tipping fuerte; revisa si existe service charge en grupos.",
+    nivel: "Muy alto",
   },
   {
     slug: "canada",
     porcentaje: "15-20%",
-    nota: "POS suele sugerir 18%; en pubs se deja por ronda o porcentaje.",
+    nota: "El POS suele sugerir 18% en restaurantes con servicio completo.",
+    nivel: "Muy alto",
   },
   {
     slug: "mexico",
     porcentaje: "10-15%",
-    nota: "En zonas turísticas la cuenta puede traer propina sugerida, verifica antes de pagar.",
+    nota: "En zonas turísticas la cuenta puede traer propina sugerida; confirma antes de pagar.",
+    nivel: "Alto",
   },
   {
     slug: "brasil",
     porcentaje: "10%",
     nota: "La 'taxa de serviço' del 10% aparece en muchas cuentas y se considera estándar.",
+    nivel: "Alto",
   },
   {
     slug: "colombia",
     porcentaje: "10%",
     nota: "En restaurantes formales se pregunta si aceptas agregar el 10% de propina.",
+    nivel: "Alto",
+  },
+  {
+    slug: "emiratos-arabes-unidos",
+    porcentaje: "10-15%",
+    nota: "En Dubai y Abu Dabi se espera un 10% en restaurantes con servicio completo.",
+    nivel: "Alto",
   },
 ];
 
@@ -111,7 +122,21 @@ export const metadata: Metadata = {
   },
 };
 
-const findPaisName = (slug: string) => paises.find((p) => p.slug === slug)?.name ?? slug;
+const rankingConDetalle = ranking
+  .map((item) => {
+    const pais = paises.find((p) => p.slug === item.slug);
+
+    if (!pais) return null;
+
+    return {
+      ...item,
+      nombre: pais.name,
+      restaurantes: pais.resumen.restaurantes,
+      continente: pais.continente ?? "",
+      seDejaPropina: pais.seDejaPropina,
+    };
+  })
+  .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
 export default function PaisesMayorPropinaPage() {
   return (
@@ -147,8 +172,16 @@ export default function PaisesMayorPropinaPage() {
         <p className="badge">Cultura de tipping</p>
         <h1 className="text-3xl font-bold">Países donde se deja más propina</h1>
         <p className="muted max-w-2xl">
-          Destinos donde el porcentaje en restaurantes es alto y esperado. Úsalo como guía rápida y luego abre la
-          ficha detallada de cada país.
+          Destinos donde el porcentaje en restaurantes es alto y esperado. Úsalo como guía rápida y abre la ficha
+          detallada de cada país para ver taxis, hoteles y tours.
+        </p>
+        <p className="muted max-w-2xl">
+          En la mayoría, el cálculo se hace sobre el subtotal antes de impuestos y se espera pagar con tarjeta o en
+          efectivo exacto. Lleva billetes pequeños para bares y taxis.
+        </p>
+        <p className="muted max-w-2xl">
+          Si viajas en grupo, revisa que no hayan agregado service charge automático para no duplicar montos. En
+          apps, personaliza el porcentaje según la puntualidad y estado del pedido.
         </p>
       </header>
 
@@ -161,15 +194,26 @@ export default function PaisesMayorPropinaPage() {
           <Link href="/paises" className="link">Ver guía completa de cada país →</Link>
         </div>
         <ol className="space-y-3 list-decimal list-inside">
-          {ranking.map((item) => (
+          {rankingConDetalle.map((item) => (
             <li key={item.slug} className="card bg-white/5">
-              <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                 <div className="space-y-1">
-                  <p className="text-lg font-semibold">{findPaisName(item.slug)}</p>
+                  <div className="flex items-center gap-2">
+                    <p className="text-lg font-semibold">{item.nombre}</p>
+                    <span className="text-[11px] rounded-full bg-white/10 px-2 py-1 text-white/70">
+                      {item.continente || ""}
+                    </span>
+                    <span className="text-[11px] rounded-full bg-amber-500/15 px-2 py-1 font-semibold text-amber-100">
+                      {item.nivel}
+                    </span>
+                  </div>
+                  <p className="text-sm text-white/80">Restaurantes: {item.restaurantes}</p>
                   <p className="muted text-sm">{item.nota}</p>
                 </div>
                 <div className="text-right space-y-1">
+                  <p className="text-xs uppercase text-white/60">Propina sugerida</p>
                   <p className="text-2xl font-bold">{item.porcentaje}</p>
+                  <p className="text-xs text-white/60">Regla: {item.seDejaPropina}</p>
                   <Link href={`/pais/${item.slug}`} className="link text-sm">
                     Abrir guía de propinas
                   </Link>
