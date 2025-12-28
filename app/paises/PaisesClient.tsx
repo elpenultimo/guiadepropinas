@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { CountryFlag } from "@/components/CountryFlag";
 import { type Continente, paises } from "@/data/paises";
 
 const PAGE_SIZE = 24;
@@ -193,7 +194,12 @@ export default function PaisesClient() {
             href={`/pais/${pais.slug}`}
             className="card hover:border-accent/40 transition-colors"
           >
-            <p className="font-semibold text-lg">{pais.name}</p>
+            <div className="text-lg">
+              <div className="flex items-center gap-2">
+                <CountryFlag countryName={pais.name} size={18} className="shrink-0" />
+                <span className="font-semibold">{pais.name}</span>
+              </div>
+            </div>
             <p className="muted text-sm">Moneda: {pais.moneda}</p>
             <p className="text-sm mt-1">¿Se deja propina? {pais.seDejaPropina}</p>
           </Link>

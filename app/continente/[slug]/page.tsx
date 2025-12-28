@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CountryFlag } from "@/components/CountryFlag";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import {
   continentesList,
@@ -184,7 +185,16 @@ export default function ContinentePage({ params }: Props) {
                 href={`/pais/${pais.slug}`}
                 className="card hover:border-accent/40 transition-colors"
               >
-                <p className="font-semibold">{pais.name}</p>
+                <div className="text-base">
+                  <div className="flex items-center gap-2">
+                    <CountryFlag
+                      countryName={pais.name}
+                      size={18}
+                      className="shrink-0"
+                    />
+                    <span className="font-semibold">{pais.name}</span>
+                  </div>
+                </div>
                 <p className="muted text-sm">Moneda: {pais.moneda}</p>
                 <p className="text-sm mt-1">¿Se deja propina? {pais.seDejaPropina}</p>
               </Link>
