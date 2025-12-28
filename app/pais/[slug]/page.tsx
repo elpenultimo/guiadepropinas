@@ -139,9 +139,6 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
   agregarPais(relacionadosPopulares);
   agregarPais(paises.filter((p) => p.slug !== pais.slug && !usados.has(p.slug)));
 
-  // ✅ iso2 opcional (no rompe build si no existe en data)
-  const iso2 = (pais as any).iso2 as string | undefined;
-
   return (
     <div className="space-y-6">
       <script
@@ -174,15 +171,14 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
       <header className="space-y-1">
         <p className="badge">Guía rápida</p>
 
-        {/* ✅ Título con bandera (solo si existe iso2) */}
-        <h1 className="flex items-center gap-3 text-3xl font-bold">
-          {iso2 ? (
+        <h1 className="text-3xl font-bold flex items-center gap-3">
+          {pais.iso2 && (
             <CountryFlag
-              iso2={iso2}
+              iso2={pais.iso2}
               label={pais.name}
-              className="h-8 w-8 rounded-sm ring-1 ring-white/20"
+              className="h-5 w-8 rounded-sm border border-white/10"
             />
-          ) : null}
+          )}
           <span>Propinas en {pais.name}</span>
         </h1>
 
