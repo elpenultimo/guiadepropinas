@@ -1,5 +1,6 @@
 import { AdSlot } from "@/components/AdSlot";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { CountryFlag } from "@/components/CountryFlag";
 import { SearchBox } from "@/components/SearchBox";
 import { nombreToSlug } from "@/data/continentes";
 import { type Continente, paises } from "@/data/paises";
@@ -68,16 +69,19 @@ export default function HomePage() {
             <p className="font-semibold mb-2">Busca un país</p>
             <SearchBox />
           </div>
-          <div className="card">
-            <h2 className="section-title">Países populares</h2>
-            <div className="grid-cards">
-              {paisesPopulares.map((pais) => (
-                <Link
+            <div className="card">
+              <h2 className="section-title">Países populares</h2>
+              <div className="grid-cards">
+                {paisesPopulares.map((pais) => (
+                  <Link
                   key={pais.slug}
                   href={`/pais/${pais.slug}`}
                   className="card hover:border-accent/40 transition-colors"
-                >
-                  <p className="text-lg font-semibold">{pais.name}</p>
+                  >
+                  <div className="flex items-center gap-2">
+                    <CountryFlag iso2={pais.iso2} size={18} />
+                    <p className="text-lg font-semibold">{pais.name}</p>
+                  </div>
                   <p className="muted text-sm">Moneda: {pais.moneda}</p>
                   <p className="mt-1 text-sm">
                     ¿Se deja propina? <span className="font-semibold">{pais.seDejaPropina}</span>

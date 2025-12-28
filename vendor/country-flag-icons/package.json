@@ -1,0 +1,11 @@
+{
+  "name": "country-flag-icons",
+  "version": "0.0.0-local",
+  "type": "module",
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "exports": {
+    "./react/3x2": "./react/3x2/index.js"
+  }
+}

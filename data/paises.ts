@@ -22,6 +22,7 @@ export type ExtraPais = {
 export type Pais = {
   name: string;
   slug: string;
+  iso2: string;
   moneda: string;
   seDejaPropina: "Sí" | "Opcional" | "No";
   continente?: Continente;
@@ -31,7 +32,141 @@ export type Pais = {
   extra?: ExtraPais;
 };
 
-export const paises: Pais[] = [
+const normalize = (value: string) =>
+  value
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
+export const slugToIso2: Record<string, string> = {
+  chile: "CL",
+  argentina: "AR",
+  peru: "PE",
+  mexico: "MX",
+  "estados-unidos": "US",
+  canada: "CA",
+  espana: "ES",
+  francia: "FR",
+  italia: "IT",
+  "reino-unido": "GB",
+  alemania: "DE",
+  japon: "JP",
+  brasil: "BR",
+  colombia: "CO",
+  ecuador: "EC",
+  bolivia: "BO",
+  paraguay: "PY",
+  uruguay: "UY",
+  venezuela: "VE",
+  guatemala: "GT",
+  "costa-rica": "CR",
+  panama: "PA",
+  "republica-dominicana": "DO",
+  cuba: "CU",
+  jamaica: "JM",
+  bahamas: "BS",
+  barbados: "BB",
+  "trinidad-y-tobago": "TT",
+  nicaragua: "NI",
+  honduras: "HN",
+  "el-salvador": "SV",
+  haiti: "HT",
+  portugal: "PT",
+  "paises-bajos": "NL",
+  belgica: "BE",
+  suiza: "CH",
+  austria: "AT",
+  suecia: "SE",
+  noruega: "NO",
+  dinamarca: "DK",
+  finlandia: "FI",
+  irlanda: "IE",
+  islandia: "IS",
+  polonia: "PL",
+  "republica-checa": "CZ",
+  hungria: "HU",
+  rumania: "RO",
+  bulgaria: "BG",
+  grecia: "GR",
+  turquia: "TR",
+  croacia: "HR",
+  eslovenia: "SI",
+  eslovaquia: "SK",
+  serbia: "RS",
+  "bosnia-y-herzegovina": "BA",
+  montenegro: "ME",
+  albania: "AL",
+  "macedonia-del-norte": "MK",
+  ucrania: "UA",
+  estonia: "EE",
+  letonia: "LV",
+  lituania: "LT",
+  luxemburgo: "LU",
+  malta: "MT",
+  chipre: "CY",
+  china: "CN",
+  "corea-del-sur": "KR",
+  india: "IN",
+  tailandia: "TH",
+  vietnam: "VN",
+  indonesia: "ID",
+  filipinas: "PH",
+  malasia: "MY",
+  singapur: "SG",
+  taiwan: "TW",
+  "hong-kong": "HK",
+  "emiratos-arabes-unidos": "AE",
+  qatar: "QA",
+  "arabia-saudita": "SA",
+  israel: "IL",
+  jordania: "JO",
+  libano: "LB",
+  camboya: "KH",
+  laos: "LA",
+  nepal: "NP",
+  "sri-lanka": "LK",
+  pakistan: "PK",
+  bangladesh: "BD",
+  kazajistan: "KZ",
+  uzbekistan: "UZ",
+  georgia: "GE",
+  armenia: "AM",
+  azerbaiyan: "AZ",
+  marruecos: "MA",
+  tunez: "TN",
+  egipto: "EG",
+  sudafrica: "ZA",
+  kenia: "KE",
+  tanzania: "TZ",
+  etiopia: "ET",
+  ghana: "GH",
+  nigeria: "NG",
+  senegal: "SN",
+  uganda: "UG",
+  ruanda: "RW",
+  namibia: "NA",
+  botsuana: "BW",
+  zimbabue: "ZW",
+  australia: "AU",
+  "nueva-zelanda": "NZ",
+  fiyi: "FJ",
+  "papua-nueva-guinea": "PG",
+};
+
+const nameToIso2: Record<string, string> = {
+  "estados-unidos": "US",
+  "reino-unido": "GB",
+  "macedonia-del-norte": "MK",
+  "emiratos-arabes-unidos": "AE",
+  "paises-bajos": "NL",
+  "republica-checa": "CZ",
+};
+
+type PaisInput = Omit<Pais, "iso2"> & { iso2?: string };
+
+const paisesBase: PaisInput[] = [
   {
     name: "Chile",
     slug: "chile",
@@ -3678,6 +3813,17 @@ export const paises: Pais[] = [
   },
 
 ];
+
+export const paises: Pais[] = paisesBase.map((pais) => {
+  const iso2 =
+    (pais.iso2 ?? slugToIso2[pais.slug] ?? nameToIso2[normalize(pais.name)])?.toLowerCase();
+
+  if (!iso2) {
+    throw new Error(`Falta código ISO2 para el país con slug ${pais.slug}`);
+  }
+
+  return { ...pais, iso2 };
+});
 
 export const findPaisBySlug = (slug: string): Pais | undefined =>
   paises.find((p) => p.slug === slug);
