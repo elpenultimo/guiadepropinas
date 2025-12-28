@@ -56,6 +56,17 @@ const regionHighlights = [
   },
 ];
 
+const paisesHotelDestacados = [
+  { slug: "estados-unidos", label: "Estados Unidos" },
+  { slug: "canada", label: "Canadá" },
+  { slug: "mexico", label: "México" },
+  { slug: "brasil", label: "Brasil" },
+  { slug: "espana", label: "España" },
+  { slug: "reino-unido", label: "Reino Unido" },
+  { slug: "emiratos-arabes-unidos", label: "Emiratos Árabes Unidos" },
+  { slug: "japon", label: "Japón" },
+];
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -206,6 +217,32 @@ export default function PropinaHotelesPage() {
                 ))}
               </ul>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="card space-y-3">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <h2 className="section-title">Países a revisar antes de viajar</h2>
+          <div className="flex flex-wrap gap-3 text-sm">
+            <Link href="/paises" className="link">
+              Ver todas las guías
+            </Link>
+            <Link href="/continentes" className="link">
+              Explorar por continente
+            </Link>
+          </div>
+        </div>
+        <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-4">
+          {paisesHotelDestacados.map((pais) => (
+            <Link
+              key={pais.slug}
+              href={`/pais/${pais.slug}`}
+              className="card bg-white/5 hover:border-accent/40 transition-colors"
+            >
+              <p className="font-semibold">{pais.label}</p>
+              <p className="muted text-xs">Montos rápidos para hoteles</p>
+            </Link>
           ))}
         </div>
       </section>

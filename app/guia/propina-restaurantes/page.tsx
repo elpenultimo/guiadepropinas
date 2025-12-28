@@ -57,6 +57,17 @@ const continentGuides = [
   },
 ];
 
+const featuredCountries = [
+  { slug: "estados-unidos", label: "Estados Unidos" },
+  { slug: "canada", label: "Canadá" },
+  { slug: "mexico", label: "México" },
+  { slug: "brasil", label: "Brasil" },
+  { slug: "argentina", label: "Argentina" },
+  { slug: "espana", label: "España" },
+  { slug: "francia", label: "Francia" },
+  { slug: "japon", label: "Japón" },
+];
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -174,6 +185,11 @@ export default function PropinaRestaurantesPage() {
               </Link>
             </li>
             <li>
+              <Link href="/continente/asia" className="link">
+                Propinas en Asia
+              </Link>
+            </li>
+            <li>
               <Link href="/pais/estados-unidos" className="link">
                 Detalles para Estados Unidos
               </Link>
@@ -189,6 +205,27 @@ export default function PropinaRestaurantesPage() {
               </Link>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section className="card space-y-3">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <h2 className="section-title">Países destacados</h2>
+          <Link href="/paises" className="link text-sm">
+            Ver todas las guías →
+          </Link>
+        </div>
+        <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-4">
+          {featuredCountries.map((country) => (
+            <Link
+              key={country.slug}
+              href={`/pais/${country.slug}`}
+              className="card bg-white/5 hover:border-accent/40 transition-colors"
+            >
+              <p className="font-semibold">{country.label}</p>
+              <p className="muted text-xs">Consejos rápidos para restaurantes</p>
+            </Link>
+          ))}
         </div>
       </section>
 
