@@ -4,6 +4,7 @@ const links = [
   { href: "/", label: "Inicio" },
   { href: "/paises", label: "Países" },
   { href: "/continentes", label: "Continentes" },
+  { href: "/ranking", label: "Ranking" },
   { href: "/privacidad", label: "Privacidad" },
   { href: "/aviso", label: "Aviso" },
 ];
