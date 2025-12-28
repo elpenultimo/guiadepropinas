@@ -5,6 +5,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+// ✅ Agrega este import (debes tener creado el componente)
+import { CountryFlag } from "@/components/CountryFlag";
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -13,9 +16,7 @@ export function generateStaticParams() {
 
 const baseUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://guiadepropinas.vercel.app";
-const normalizedBaseUrl = baseUrl.endsWith("/")
-  ? baseUrl.slice(0, -1)
-  : baseUrl;
+const normalizedBaseUrl = baseUrl.endsWith("/") ? baseUrl.slice(0, -1) : baseUrl;
 
 export function generateMetadata({
   params,
@@ -27,6 +28,7 @@ export function generateMetadata({
 
   const title = `Propinas en ${pais.name} – cuánto dejar y cuándo`;
   const description = `Guía rápida de propinas en ${pais.name}: restaurantes, taxis, hoteles y errores comunes.`;
+
   return {
     title,
     description,
@@ -104,13 +106,21 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
     "reino-unido",
     "alemania",
   ];
+
   const relacionadosBase = pais.continente
-    ? paises.filter((p) => p.continente === pais.continente && p.slug !== pais.slug)
+    ? paises.filter(
+        (p) => p.continente === pais.continente && p.slug !== pais.slug
+      )
     : [];
+
   const relacionadosPopulares = populares
     .map((slug) => paises.find((p) => p.slug === slug))
     .filter((p): p is NonNullable<typeof p> => Boolean(p))
-    .filter((p) => p.slug !== pais.slug && !relacionadosBase.some((base) => base.slug === p.slug));
+    .filter(
+      (p) =>
+        p.slug !== pais.slug &&
+        !relacionadosBase.some((base) => base.slug === p.slug)
+    );
 
   const maxRelacionados = 8;
   const relacionadosOrdenados: typeof paises = [];
@@ -127,9 +137,10 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
 
   agregarPais(relacionadosBase);
   agregarPais(relacionadosPopulares);
-  agregarPais(
-    paises.filter((p) => p.slug !== pais.slug && !usados.has(p.slug))
-  );
+  agregarPais(paises.filter((p) => p.slug !== pais.slug && !usados.has(p.slug)));
+
+  // ✅ iso2 opcional (no rompe build si no existe en data)
+  const iso2 = (pais as any).iso2 as string | undefined;
 
   return (
     <div className="space-y-6">
@@ -141,6 +152,7 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+
       <nav aria-label="Breadcrumb" className="text-xs text-white/60">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
@@ -158,28 +170,47 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
           <li className="font-semibold text-white/80">{pais.name}</li>
         </ol>
       </nav>
+
       <header className="space-y-1">
         <p className="badge">Guía rápida</p>
-        <h1 className="text-3xl font-bold">Propinas en {pais.name}</h1>
+
+        {/* ✅ Título con bandera (solo si existe iso2) */}
+        <h1 className="flex items-center gap-3 text-3xl font-bold">
+          {iso2 ? (
+            <CountryFlag
+              iso2={iso2}
+              label={pais.name}
+              className="h-8 w-8 rounded-sm ring-1 ring-white/20"
+            />
+          ) : null}
+          <span>Propinas en {pais.name}</span>
+        </h1>
+
         <p className="muted">Moneda: {pais.moneda}</p>
       </header>
 
       <div className="card space-y-3">
-        <p className="font-semibold text-lg">¿Se deja propina? {pais.seDejaPropina}</p>
+        <p className="font-semibold text-lg">
+          ¿Se deja propina? {pais.seDejaPropina}
+        </p>
+
         <div className="grid gap-3 sm:grid-cols-3">
           <div className="card bg-white/5">
             <p className="text-sm uppercase text-white/60">Restaurantes</p>
             <p className="leading-relaxed">{pais.resumen.restaurantes}</p>
           </div>
+
           <div className="card bg-white/5">
             <p className="text-sm uppercase text-white/60">Taxis</p>
             <p className="leading-relaxed">{pais.resumen.taxis}</p>
           </div>
+
           <div className="card bg-white/5">
             <p className="text-sm uppercase text-white/60">Hoteles</p>
             <p className="leading-relaxed">{pais.resumen.hoteles}</p>
           </div>
         </div>
+
         <div className="card bg-white/5">
           <p className="font-semibold mb-2">Notas rápidas</p>
           <ul className="list-disc list-inside text-sm text-white/80 space-y-1">
@@ -188,6 +219,7 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
             ))}
           </ul>
         </div>
+
         <AdSlot />
       </div>
 
@@ -195,21 +227,27 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
         <div className="card">
           <h2 className="section-title">Bares y cafés</h2>
           <p className="leading-relaxed text-white/90">
-            {extra.baresCafes ?? "Busca dejar monedas o un pequeño porcentaje si hubo buena atención."}
+            {extra.baresCafes ??
+              "Busca dejar monedas o un pequeño porcentaje si hubo buena atención."}
           </p>
         </div>
+
         <div className="card">
           <h2 className="section-title">Tours y guías</h2>
           <p className="leading-relaxed text-white/90">
-            {extra.tours ?? "En tours guiados se agradece una propina acorde a la duración y el tamaño del grupo."}
+            {extra.tours ??
+              "En tours guiados se agradece una propina acorde a la duración y el tamaño del grupo."}
           </p>
         </div>
+
         <div className="card">
           <h2 className="section-title">Delivery</h2>
           <p className="leading-relaxed text-white/90">
-            {extra.delivery ?? "Las apps permiten sumar un extra opcional; efectivo pequeño también funciona."}
+            {extra.delivery ??
+              "Las apps permiten sumar un extra opcional; efectivo pequeño también funciona."}
           </p>
         </div>
+
         <div className="card">
           <h2 className="section-title">Propinas con tarjeta vs efectivo</h2>
           <p className="leading-relaxed text-white/90">
@@ -238,6 +276,7 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
         <p className="muted mb-3">
           Explora otras guías con costumbres parecidas o destinos populares.
         </p>
+
         <div className="grid gap-2 sm:grid-cols-2">
           {relacionadosOrdenados.map((rel) => (
             <Link
@@ -246,6 +285,7 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
               className="card bg-white/5 hover:border-accent/40 transition-colors"
             >
               <p className="font-semibold">{rel.name}</p>
+
               {rel.continente && (
                 <span className="inline-flex items-center rounded-full bg-white/10 px-2 py-1 text-[11px] text-white/70">
                   {rel.continente}
