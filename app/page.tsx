@@ -46,7 +46,9 @@ export default function HomePage() {
   const paisesPopulares = paises.slice(0, 12);
 
   const continentesCompactos = continentesOrden.map((continente) => {
-    const totalPaises = paises.filter((pais) => pais.continente === continente).length;
+    const totalPaises = paises.filter(
+      (pais) => pais.continente === continente
+    ).length;
     return { continente, totalPaises };
   });
 
@@ -56,19 +58,40 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
       <section className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-start">
         <div className="space-y-4">
-          <p className="badge">Actualizado 2025</p>
-          <h1 className="text-4xl font-bold leading-tight">Propinas en el mundo</h1>
-          <p className="muted max-w-2xl leading-relaxed">
-            Aprende cuánto dejar, cuándo dejar y dónde dejar propina en cada destino. Resuelve tus
-            dudas de tipping para restaurantes, taxis, tours y hoteles con información directa en
-            español, lista para viajeros.
-          </p>
+          {/* HERO IMAGE */}
+          <div className="relative mb-2 rounded-2xl overflow-hidden">
+            <img
+              src="/images/hero/propinas-mundo.jpg"
+              alt="Propinas en restaurantes y cafés alrededor del mundo"
+              className="w-full h-[260px] sm:h-[340px] object-cover"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-10">
+              <p className="badge mb-3 w-fit">Actualizado 2026</p>
+              <h1 className="text-4xl font-bold leading-tight text-white">
+                Propinas en el mundo
+              </h1>
+              <p className="mt-2 max-w-2xl text-white/80 leading-relaxed">
+                Aprende cuánto dejar, cuándo dejar y dónde dejar propina en cada
+                destino. Resuelve tus dudas de tipping para restaurantes, taxis,
+                tours y hoteles con información directa en español, lista para
+                viajeros.
+              </p>
+            </div>
+          </div>
+
+          {/* (Opcional) Si quieres mantener el badge/título antiguos fuera del hero, bórralos.
+              Los dejamos fuera para que no se repita el H1. */}
+
           <div className="card">
             <p className="font-semibold mb-2">Busca un país</p>
             <SearchBox />
           </div>
+
           <div className="card">
             <h2 className="section-title">Países populares</h2>
             <div className="grid-cards">
@@ -80,18 +103,24 @@ export default function HomePage() {
                 >
                   <div className="text-lg">
                     <div className="flex items-center gap-2">
-                      <CountryFlag countryName={pais.name} size={18} className="shrink-0" />
+                      <CountryFlag
+                        countryName={pais.name}
+                        size={18}
+                        className="shrink-0"
+                      />
                       <span className="font-semibold">{pais.name}</span>
                     </div>
                   </div>
                   <p className="muted text-sm">Moneda: {pais.moneda}</p>
                   <p className="mt-1 text-sm">
-                    ¿Se deja propina? <span className="font-semibold">{pais.seDejaPropina}</span>
+                    ¿Se deja propina?{" "}
+                    <span className="font-semibold">{pais.seDejaPropina}</span>
                   </p>
                 </Link>
               ))}
             </div>
           </div>
+
           <div className="card">
             <h2 className="section-title">Explora por continente</h2>
             <div className="grid gap-4 md:grid-cols-2">
@@ -113,6 +142,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+
         <div className="space-y-4">
           <AdSlot />
           <div className="card">
