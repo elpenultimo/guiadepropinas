@@ -14,6 +14,9 @@ export function Footer() {
         <Link href="/por-que-existe-la-propina" className="link text-sm">
           Guía editorial: ¿Por qué existe la propina?
         </Link>
+        <Link href="/errores-comunes-propinas-viaje" className="link text-sm">
+          Guía editorial: errores comunes con las propinas al viajar
+        </Link>
         <p className="text-white/60">
           © 2026 Guía de Propinas. Información referencial y sujeta a cambios locales.
         </p>
