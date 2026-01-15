@@ -264,6 +264,16 @@ export default function PaisPage({ params }: { params: { slug: string } }) {
         </ul>
       </section>
 
+      <section className="card">
+        <h2 className="section-title">Guía editorial recomendada</h2>
+        <p className="muted">
+          ¿No sabes si dejar propina? Revisa nuestra guía sobre por qué existe la propina antes de tu viaje.
+        </p>
+        <Link href="/por-que-existe-la-propina" className="link mt-2 inline-flex">
+          Ver guía: ¿por qué existe la propina?
+        </Link>
+      </section>
+
       <section>
         <h2 className="section-title">Preguntas frecuentes</h2>
         <FAQAccordion faqs={pais.faqs} />
