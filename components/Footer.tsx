@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="footer">
@@ -9,6 +11,9 @@ export function Footer() {
           plataformas internacionales de viajes y hospitalidad. Las costumbres pueden variar según
           ciudad, tipo de servicio y cambios recientes.
         </p>
+        <Link href="/por-que-existe-la-propina" className="link text-sm">
+          Guía editorial: ¿Por qué existe la propina?
+        </Link>
         <p className="text-white/60">
           © 2026 Guía de Propinas. Información referencial y sujeta a cambios locales.
         </p>

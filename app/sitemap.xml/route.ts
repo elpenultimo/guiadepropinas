@@ -34,6 +34,11 @@ const basePaths: SitemapEntry[] = [
     changefreq: "monthly",
     priority: 0.7,
   },
+  {
+    loc: `${SITE_URL}/por-que-existe-la-propina`,
+    changefreq: "monthly",
+    priority: 0.7,
+  },
 ];
 
 const continentPaths: SitemapEntry[] = continentesList.map((continente) => ({
