@@ -185,6 +185,17 @@ export default function PaisesMayorPropinaPage() {
         </p>
       </header>
 
+      <section className="card">
+        <h2 className="section-title">Guía editorial recomendada</h2>
+        <p className="muted">
+          ¿No sabes si dejar propina? Revisa nuestra guía sobre por qué existe la propina para entender el contexto
+          cultural.
+        </p>
+        <Link href="/por-que-existe-la-propina" className="link mt-2 inline-flex">
+          Leer guía sobre por qué existe la propina
+        </Link>
+      </section>
+
       <section className="card space-y-4">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>

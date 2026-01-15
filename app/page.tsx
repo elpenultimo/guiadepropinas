@@ -93,6 +93,25 @@ export default function HomePage() {
           </div>
 
           <div className="card">
+            <h2 className="section-title">Guías esenciales sobre propinas</h2>
+            <p className="muted">
+              Antes de viajar, entiende cómo funcionan las propinas y evita errores culturales comunes.
+            </p>
+            <ul className="mt-3 space-y-2">
+              <li>
+                <Link href="/por-que-existe-la-propina" className="link">
+                  ¿Por qué existe la propina y por qué cambia según el país?
+                </Link>
+              </li>
+              <li>
+                <Link href="/errores-comunes-propinas-viaje" className="link">
+                  Errores comunes con las propinas que pueden arruinar un viaje
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="card">
             <h2 className="section-title">Países populares</h2>
             <div className="grid-cards">
               {paisesPopulares.map((pais) => (
